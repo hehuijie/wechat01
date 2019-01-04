@@ -1,0 +1,148 @@
+@import'../../template/topHead.wxss';
+@import'../../template/listTem.wxss';
+.container{
+  width: 100%;
+  margin: 0rpx;
+  font-size: 24rpx;
+}
+.titleStyle{
+  font-size: 28rpx;
+  color: royalblue;
+  text-align: center;
+}
+.moudle01{
+  margin: 10rpx 0rpx;
+}
+/* tab */
+.swiper-tab{
+  width: 100%;
+  border-bottom: 2rpx solid #777;
+  text-align: center;
+  line-height: 80rpx;
+}
+.swiper-tab-list,
+.swiper-tab-channel{
+  font-size: 32rpx;
+  display: inline-block;
+  width: 33.33%;
+  color: #777;
+}
+.on{
+  color: #da7c0c;
+  border-bottom: 5rpx solid #da7c0c;
+}
+.swiper-box{
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-item-box{
+  padding:0rpx 30rpx;
+  background: #fafafa;
+  padding-bottom: 40rpx;
+}
+.tab1Time{
+  height: 80rpx;
+  position: relative;
+}
+.searchTimeStyle{
+  line-height: 80rpx;
+  color: #666;
+  font-size: 24rpx;
+  display: inline-block;
+}
+.searchTimeTab{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row column;
+  width: 180rpx;
+  height: 50rpx;
+  border-top: 2rpx solid #ddd;
+  border-left: 2rpx solid #ddd;
+  border-bottom: 2rpx solid #ddd;
+  background: #fff;
+  position: absolute;
+  right: 0rpx;
+  top: 15rpx;
+}
+.searchTimeTab view{
+  width: 60rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-right: 2rpx solid #ddd;
+  font-size: 24rpx;
+  color: #666;
+}
+.tab1Block{
+  background: #fff;
+  box-shadow: 0rpx 0rpx 4rpx #ddd;
+  margin-top: 20rpx;
+}
+.tableBlockCont{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row column;
+  -ms-flex-direction: row column;
+}
+.tableBlockCont view{
+  width: 33.33%;
+  text-align: left;
+  font-size: 28rpx;
+}
+.tab1ColorBgBtn{
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  position: relative;
+}
+.tab1ColorBgBtn icon{
+  display: inline;
+  font-size: 30rpx;
+  position: absolute;
+  top: -14rpx;
+  left: 6rpx;
+}
+.colorBgClient{
+  background-color: #f79534;
+}
+.colorBgStudent{
+  background-color: #4c8bfd;
+}
+.colorBgCard{
+  background-color: #ff5b5c;
+}
+.smallBtnUp{
+  display: inline-block;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding: 0rpx 6rpx;
+  border-radius: 6rpx;
+  font-size: 22rpx;
+  color: #fff;
+  background-color: #f86a52;
+}
+.smallBtnDown{
+  display: inline-block;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding: 0rpx 6rpx;
+  border-radius: 6rpx;
+  font-size: 22rpx;
+  color: #fff;
+  background-color: #51c8a8;
+}
+/* 渠道 */
+.channelTabBox{
+  background: darkorange;
+}
+.channelEle{
+  height: 60rpx;
+  border-bottom: 2rpx solid slateblue;
+  color: #333;
+  text-align: left;
+}

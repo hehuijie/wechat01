@@ -1,0 +1,22 @@
+<template name="menList">
+  <view class='viewListBox'>
+    <view class='leftView'>
+      <view class='textStyle'>{{textMsg}}</view>
+    </view>
+    <view class='rightView'>
+      <text>{{msgList}}</text>
+    </view>
+  </view>
+</template>
+<!-- 运营监控 -->
+<template name="workListOne">
+<view class='container'>
+moudle in template folder
+</view>
+</template>
+<!-- 业务数据 -->
+<template name="workListTwo">
+</template>
+<!-- 待办事项 -->
+<template name="workListThree">
+</template>

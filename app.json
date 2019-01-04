@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/menu/menu",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/view/view",
+    "pages/business/business",
+    "pages/operate/operate"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#5099ff",
+    "navigationBarTitleText": "主页",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#185ea6"
+  },
+  "tabBar":{
+    "list":[{
+        "pagePath": "pages/menu/menu",
+        "iconPath": "images/menu.png",
+        "selectedIconPath": "images/menuS.png",
+        "text": "主页"
+      },{
+      "pagePath":"pages/index/index",
+      "iconPath":"images/menu.png",
+      "selectedIconPath":"images/menuS.png",
+      "text":"首页"
+    },{
+      "pagePath": "pages/view/view",
+      "iconPath":"images/category.png",
+      "selectedIconPath": "images/categoryS.png",
+      "text": "分类"
+    },{
+      "pagePath": "pages/logs/logs",
+      "iconPath":"images/log.png",
+      "selectedIconPath": "images/logS.png",
+      "text": "日志"
+    }],
+    "selectedColor": "#106db2",
+    "borderStyle": "black",
+    "color": "#185ea6"
+  },
+  "debug":true
+}

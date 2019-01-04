@@ -1,0 +1,20 @@
+<template name="topHeader">
+<view class="btn-area">
+  <view class='inlineC'>选择校区</view>
+  <view class='navStyle'>
+  <navigator url='../menu/menu' open-type="switchTab" class='inlineC' hover-class="navigator-hover">
+    主页测试
+  </navigator>
+  </view>
+  <view class='navStyle'>
+  <navigator url='../operate/operate?title=运营数据' open-type="reLaunch" class='inlineC' hover-class="navigator-hover">
+    运营数据
+  </navigator>
+  </view>
+  <view class='navStyle'>
+  <navigator url='../business/business?title=业务通知' open-type="reLaunch" class='inlineC' hover-class="navigator-hover">
+    业务通知
+  </navigator>
+  </view>
+</view>
+</template>

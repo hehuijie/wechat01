@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class='username'>
+    <text class='user-name'>{{userName}}</text>
+  </view>
+</view>
+<view class='body-view'>
+  <switch checked='checked' bindchange='switch1Change'></switch>
+  <switch color='red' type='checkbox' bindchange='switch2Change'></switch>
+  <switch disabled type='switch'></switch>
+</view>
+<button class='default-btn' type='default' size='{{defaultSize}}' loading='{{loading}}' plain="{{plain}}" disabled='{{disabled}}' bindtap='default' hover-class='other-button-hover'>default</button>
+<button class='default-btn' type='primary' size='{{primarySize}}' loading='{{loading}}' plain='{{plain}}' disabled='{{disabled}}' bindtap='primary'>primary</button>
+<button class='default-btn' type='warn' size='{{warnSize}}' loading='{{loading}}' plain='{{plain}}' disabled='{{disabled}}' bindtap='warn'>warn</button>
+<button class='default-btn' bindtap="setDisabled">点击设置以上按钮disabled属性</button>
+<button class='default-btn' bindtap="setPlain">点击设置以上按钮plain属性</button>
+<button class='default-btn' bindtap="setLoading">点击设置以上按钮loading属性</button>
+<!-- 引用组件的页面模板 -->
+<view>
+  <component-tag-name>
+    <view>这是插入到组件slot中的内容</view>
+  </component-tag-name>
+</view>

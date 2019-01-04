@@ -1,0 +1,7 @@
+<view class="eleOne-box">
+  <view>这里是组件的内部节点</view>
+  <slot name="before"></slot>
+  <view>{{innerText}}</view>
+  <slot name="after"></slot>
+  <view>slot节点的用处还没找到</view>
+</view>

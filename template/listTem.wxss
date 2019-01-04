@@ -1,0 +1,41 @@
+.viewListBox{
+  width: 100%;
+  height: 140rpx;
+  position: relative;
+}
+.leftView{
+  width: 150rpx;
+  height: 140rpx;
+  display: inline-block;
+  position: relative;
+  top: 0rpx;
+}
+.textStyle{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+  font-size: 36rpx;
+  background: darkcyan;
+  position: relative;
+  top: 10rpx;
+  left: 25rpx;
+}
+.rightView{
+  display: inline-block;
+  width: 600rpx;
+  border-bottom: 2rpx solid #ececec;
+  height: 140rpx;
+  line-height: 140rpx;
+  color: #333;
+  font-size: 24rpx;
+  position: relative;
+  top: 0rpx;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+}

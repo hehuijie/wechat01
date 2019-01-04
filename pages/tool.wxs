@@ -1,0 +1,15 @@
+var a = 10,b = 20;
+var tb = 30 === a+b;
+console.log(tb+"wxs");
+console.log(undefined === JSON.stringify(undefined)+"////");
+var foo = "'hello world' from tool.wxs";
+var dd = "测试";
+var bar = function(d){
+  return d;
+}
+module.exports = {
+  FOO:foo,
+  BAR:bar(dd),
+  msg: 'some msg',
+  msg02: tb,
+};

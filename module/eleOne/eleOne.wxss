@@ -1,0 +1,5 @@
+.eleOne-box{
+  background: darkkhaki;
+  color: darkorange;
+  font-size: 26rpx;
+}

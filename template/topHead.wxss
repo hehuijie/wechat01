@@ -1,0 +1,21 @@
+.btn-area{
+  height: 88rpx;
+  background: #5099ff;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navStyle{
+  height: 88rpx;
+  display: inline-block;
+  margin: 0rpx 10rpx;
+  padding: 0rpx;
+  line-height: 88rpx;
+  font-size: 36rpx;
+}
+.navStyle.on{
+  height: 82rpx;
+  border-bottom: 6rpx solid #fff;
+}
+.inlineC{
+  display: inline-block;
+}
