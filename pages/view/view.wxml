@@ -70,10 +70,3 @@
   <view wx:else>0</view>
   <button bindtap='changeNum'>change num</button>
 </view>
-<view class='section'>
-  <view class='section-title'>wxs 模块</view>
-  <wxs src="../tool.wxs" module="tool"/>
-  <view>{{tool.msg}}+{{tool.msg02}}</view>
-  <view>{{tool.BAR}}</view>
-  <view>{{tool.BAR}}+{{tool.FOO}}</view>
-</view>

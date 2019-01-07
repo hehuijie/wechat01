@@ -1,7 +1,5 @@
-@import'../../template/topHead.wxss';
-@import'../../template/listTem.wxss';
 .container{
-  width: 100%;
+  width: 750rpx;
   margin: 0rpx;
   font-size: 24rpx;
 }

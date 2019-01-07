@@ -1,0 +1,89 @@
+<view class='tableHead'>
+  <view class='disFlex timeVal'>
+    <view class='disFlex font24 color33'>
+      <icon class='iconfont icon-icon-'></icon>
+      <text class='marginRight10'>{{beginTime}}</text>至<text class='marginLeft10'>{{endTime}}</text>
+    </view>
+    <view class='disFlex tabTimeCycle'>
+      <view class='{{timeCycle=="day" ? "on" : ""}}' style='border-right:1rpx solid #eee' data-current='day' data-index='0' bindtap='tabTimeCycle'>日</view>
+      <view class='{{timeCycle=="week" ? "on" : ""}}' style='border-right:1rpx solid #eee' data-current='week' data-index='1' bindtap='tabTimeCycle'>周</view>
+      <view class='{{timeCycle=="month" ? "on" : ""}}' data-current='month' data-index='2' bindtap='tabTimeCycle'>月</view>
+    </view>
+  </view>
+</view>
+<swiper current='{{swiper_current}}' style='width:100%; height:{{winHight}}px' duration='500' circular='true'>
+  <swiper-item>
+    <view class='timeTableBox'>
+      <scroll-view scroll-x style='height:{{winHight}}px;width:{{winWidth}}px' scroll-with-animation='true' bindscrolltoupper='upper' bindscrolltolower='lower'>
+          <view class='timeTableDay' style='width:{{classRoom.length*80+60}}px'>
+          <view class='disFlex trCourse' >
+            <view class='tdHour font24 color33'></view>
+            <view wx:for='{{classRoom}}' class='trCourseVal'>
+              <view class='font24 color66'>{{item.roomName}}</view>
+              <view class='font28 color33'>{{item.schoolName}}</view>
+            </view>
+          </view>
+          <view wx:for='{{timeArr}}' class='tr'>
+            <view class='tdHour font24 color33' data-num='{{index}}'data-index='{{item}}'>{{item}}</view>
+            <view class='trCourseVal'></view>
+            <view class='trCourseVal'></view>
+            <view class='trCourseVal'></view>
+            <view class='trCourseVal'></view>
+            <view class='trCourseVal'></view>
+            <view class='trCourseVal'></view>
+            <view class='trCourseVal'></view>
+          </view>
+          <block wx:for='{{classRoom}}'>
+          <view wx:for='{{classRoom[index].courseArr}}' wx:for-index='indexCourse' wx:for-item='itemCourse' data-beginTime='{{classRoom[index].courseArr[indexCourse]}}' class='courseMsgBox' style='left:{{80+index*160+2}}rpx;top:{{80+classRoom[index].courseArr[indexCourse].courseBetwn*70}}rpx;height:{{classRoom[index].courseArr[indexCourse].courseLen*60}}rpx;background:{{colorArr[index]}}'>
+            <view class='font24 colorFF'>{{classRoom[index].courseArr[indexCourse].courseName}}</view>
+            <view class='font24 colorFF'>老师：{{classRoom[index].courseArr[indexCourse].teacher}}</view>
+            <view class='font24 colorFF'>学生：{{classRoom[index].courseArr[indexCourse].stuNum}}</view>
+            <view class='font24 colorFF'>{{classRoom[index].courseArr[indexCourse].courseTime}}</view>
+          </view>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='timeTableBox'>
+      <scroll-view scroll-x style='height:{{winHight}}px;width:{{winWidth}}px' scroll-with-animation='true' bindscrolltoupper='upper' bindscrolltolower='lower'>
+        <view class='timeTableDay' style='width:{{week.length*80}}px'>
+          <view class='disFlex trCourse' >
+            <view class='tdHour font24 color33'></view>
+            <view wx:for='{{week}}' class='trCourseVal'>
+              <view class='font24 color66'>{{item}}</view>
+            </view>
+          </view>
+          <view wx:for='{{timeArr}}' class='tr'>
+            <view class='tdHour font24 color33' data-num='{{index}}'data-index='{{item}}'>{{item}}</view>
+            <view class='trCourseVal'></view>
+            <view class='trCourseVal'></view>
+            <view class='trCourseVal'></view>
+            <view class='trCourseVal'></view>
+            <view class='trCourseVal'></view>
+            <view class='trCourseVal'></view>
+            <view class='trCourseVal'></view>
+          </view>
+          <block wx:for='{{classRoom}}'>
+          <view wx:for='{{classRoom[index].courseArr}}' wx:for-index='indexCourse' wx:for-item='itemCourse' data-beginTime='{{classRoom[index].courseArr[indexCourse]}}' class='courseMsgBox weekBlockstyle' style='left:{{80+index*160+2}}rpx;top:{{80+classRoom[index].courseArr[indexCourse].courseBetwn*70}}rpx;height:{{classRoom[index].courseArr[indexCourse].courseLen*60}}rpx;'>
+            <view class='font24 colorFF'><view class='onBlock'></view>8</view>
+            <view class='font24 colorFF'><view class='onBlocking'></view>30</view>
+          </view>
+          </block>
+          <view class='week-footer disFlex'>
+            <view class='marginRight30'>
+              <view class='onBlock'></view>已开课班级
+            </view>
+            <view class=''>
+              <view class='onBlocking'></view>招生中班级
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>month</view>
+  </swiper-item>
+</swiper>

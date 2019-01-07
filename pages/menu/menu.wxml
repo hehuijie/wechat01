@@ -1,17 +1,5 @@
 <view class="btn-area">
   <view class='inlineC'>选择校区<icon class="iconfont icon-jiantouarrow486"></icon></view>
-  <block wx:for="{{workList}}" wx:for-index="index" wx:for-item="workItem">
-    <block wx:if="{{index == 0}}">
-      <view class='navStyle on'>
-        {{workItem}}
-      </view>
-    </block>
-    <block wx:else>
-      <view class='navStyle'>
-        {{workItem}}
-      </view>
-    </block>
-  </block>
   <view class='inlineC'><icon class="iconfont icon-rili"></icon></view>
 </view>
 <import src="../../template/listTem.wxml"/>
@@ -32,48 +20,6 @@
           <block wx:for="{{searchTimeArray}}">
           <view>{{item}}</view>
           </block>
-        </view>
-      </view>
-      <view class='tab1Block'>
-        <view class='tableBlockTitle'>
-          <view class='tab1ColorBgBtn colorBgClient'><icon class="iconfont icon-kehu"></icon></view>
-          <text class='font16'>客户</text>
-        </view>
-        <view class='tableBlockCont'>
-          <view>新增：<text>125</text><view class='smallBtnUp'>+12%</view></view>
-          <view>签约确认：<text>25</text><view class='smallBtnDown'>-20%</view></view>
-        </view>
-        <view class='tableBlockCont'>
-          <view>待分配：<text>12</text></view>
-          <view>跟进：<text>25</text></view>
-          <view>签约未付清：<text>25</text></view>
-        </view>
-      </view>
-      <view class='tab1Block'>
-        <view class='tableBlockTitle'>
-          <view class='tab1ColorBgBtn colorBgStudent'><icon class="iconfont icon-qianzaixueyuan"></icon></view>
-          <text class='font16'>学员</text>
-        </view>
-        <view class='tableBlockCont'>
-          <view>在读：<text>125</text><view class='smallBtnUp'>+12%</view></view>
-          <view>新生：<text>25</text></view>
-          <view>老生：<text>25</text></view>
-        </view>
-        <view class='tableBlockCont'>
-          <view>续班：<text>12</text></view>
-          <view>扩科：<text>25</text></view>
-          <view>退费：<text>25</text></view>
-        </view>
-      </view>
-      <view class='tab1Block'>
-        <view class='tableBlockTitle'>
-          <view class='tab1ColorBgBtn colorBgCard'><icon class="iconfont icon-qiapian"></icon></view>
-          <text class='font16'>充值卡</text>
-        </view>
-        <view class='tableBlockCont'>
-          <view>新卡：<text>125</text><view class='smallBtnUp'>+12%</view></view>
-          <view>升卡：<text>25</text></view>
-          <view>转卡：<text>25</text></view>
         </view>
       </view>
     </view>

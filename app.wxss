@@ -19,4 +19,7 @@
  .font16{
    font-size: 32rpx;
  }
+ .disFlex{
+   display: flex;
+ }
 

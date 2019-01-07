@@ -1,0 +1,61 @@
+<view class='classAttendanceBox'>
+  <view class='classMsgDetail'>
+    <view class='disFlex'>
+      <view class='className'>英文写作1班</view>
+    </view>
+    <view class='disFlex marginTop20'>
+      <view class='studentNum marginRight60'>
+        <icon class='iconfont icon-xuesheng'></icon>
+        <text>40人</text>
+      </view>
+      <view class='schoolName'>
+        <icon class='iconfont icon-9xuexiaoshiqu'></icon>
+        <text>徐汇校区</text>
+      </view>
+    </view>
+  </view>
+  <view class='classTimeDetail'>
+    <view class='disFlex'>
+      <view class='disFlex widthHalf'>
+        <view class='widthHalf nameBox'>授课老师</view>
+        <view class='widthHalf valBox'>赵英俊</view>
+      </view>
+      <view class='disFlex widthHalf'>
+        <view class='widthHalf nameBox'>助教老师</view>
+        <view class='widthHalf valBox'>张龙涛</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='marginTop20 attendanceParBox'>
+  <view class='boxTitle'>考勤实况</view>
+  <view class='marginTop30 parListBox'>
+    <view class='padLeft30'>
+      <view class='disFlex'>
+        <view class='font28 color33'>林苏</view>
+      </view>
+      <view class='disFlex marginTop20'>
+        <view class='font28 color66 marginRight30'>剩余课次：
+          <text>16</text>
+        </view>
+        <view class='font28 color66 marginRight30'>出勤：
+          <text>6</text>
+        </view>
+        <view class='classTimeNum' bindtap='attendanceRecord'>查看记录</view>
+      </view>
+      <view class='disFlex marginTop20'>
+        <view class='font28 color66 marginRight30'>缺勤：<text>6</text></view>
+        <view class='font28 color66'>请假：<text>4</text></view>
+      </view>
+    </view>
+    <!-- 考勤课次列表 -->
+    <view class='attendanceRecordBox'>
+      <view class='seeHistoryRecord'>
+      <icon class='iconfont icon-lishijilu_o'></icon> <text>查看历史考勤</text>
+      </view>
+      <view class='record'>
+        <view></view>
+      </view>
+    </view>
+  </view>
+</view>

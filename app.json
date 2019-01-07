@@ -3,9 +3,9 @@
     "pages/menu/menu",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/view/view",
-    "pages/business/business",
-    "pages/operate/operate"
+    "pages/toolbox/toolbox",
+    "pages/timeTable/timeTable",
+    "pages/attendanceDetailParB/attendanceDetailParB"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -19,14 +19,10 @@
         "pagePath": "pages/menu/menu",
         "iconPath": "images/menu.png",
         "selectedIconPath": "images/menuS.png",
-        "text": "主页"
-      },{
-      "pagePath":"pages/index/index",
-      "iconPath":"images/menu.png",
-      "selectedIconPath":"images/menuS.png",
-      "text":"首页"
-    },{
-      "pagePath": "pages/view/view",
+        "text": "工作台"
+      },
+    {
+      "pagePath": "pages/toolbox/toolbox",
       "iconPath":"images/category.png",
       "selectedIconPath": "images/categoryS.png",
       "text": "分类"

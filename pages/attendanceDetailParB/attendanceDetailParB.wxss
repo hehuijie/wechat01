@@ -1,0 +1,15 @@
+/* @import'../attendanceDetailParA/attendanceDetailParA'; */
+.attendanceRecordBox{
+  background: #fafafa;
+}
+.seeHistoryRecord{
+  margin: 0 auto;
+  display: inline-block;
+  background: #f4f4f4;
+  height: 36rpx;
+  line-height: 36px;
+  border-radius: 18rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #999;
+}

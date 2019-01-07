@@ -1,3 +1,0 @@
-<import src="../../template/topHead.wxml"/>
-<template is="topHeader"/>
-<view style="text-align:center"> {{title}} </view>
