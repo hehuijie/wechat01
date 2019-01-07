@@ -1,0 +1,38 @@
+<view class='toolbox'>
+  <view class='toolboxInner disFlex'>
+    <view class='textCenter bookBuilding'>
+      <view class='toolboxIconBg bookBuildIcon'><icon class='iconfont icon-iconjinrixinzeng'></icon></view>
+      <view class='font32 color33'>建档</view>
+    </view>
+    <view class='textCenter apply'>
+      <view class='toolboxIconBg applyIcon'><icon class='iconfont icon-shoufeiguanli'></icon></view>
+      <view class='font32 color33'>收费</view>
+    </view>
+    <view class='textCenter attendance'>
+      <view class='toolboxIconBg attendanceIcon'><icon class='iconfont icon-dianming'></icon></view>
+      <view class='font32 color33'>点名</view>
+    </view>
+    <view class='textCenter audit'>
+      <view class='toolboxIconBg auditIcon'><icon class='iconfont icon-dkw_zhangdan'></icon></view>
+      <view class='font32 color33'>查账</view>
+    </view>
+  </view>
+  <view class='toolboxInner disFlex marginTop30'>
+    <view class='textCenter classBuilding'>
+      <view class='toolboxIconBg classBuildingIcon'><icon class='iconfont icon-ai-connection'></icon></view>
+      <view class='font32 color33'>建班</view>
+    </view>
+    <view class='textCenter classGroup'>
+      <view class='toolboxIconBg classGroupIcon'><icon class='iconfont icon-fenban'></icon></view>
+      <view class='font32 color33'>分班</view>
+    </view>
+    <view class='textCenter arrangeing'>
+      <view class='toolboxIconBg arrangeingIcon'><icon class='iconfont icon-kechengbiao'></icon></view>
+      <view class='font32 color33'>排课</view>
+    </view>
+    <view class='textCenter timetable'>
+      <view class='toolboxIconBg timetableIcon'><icon class='iconfont icon-kebiaox'></icon></view>
+      <view class='font32 color33'>课表</view>
+    </view>
+  </view>
+</view>
