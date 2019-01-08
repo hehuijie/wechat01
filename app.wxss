@@ -1,25 +1,248 @@
 @import'utils/iconFont.wxss';
 /**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 100rpx 0;
-  box-sizing: border-box;
+page {
+  background-color: #fafafa;
+  font-family:"iconfont" !important;
 }
- /*通用  */
- .font12{
-   font-size: 24rpx;
- }
- .font14{
-   font-size: 28rpx;
- }
- .font16{
-   font-size: 32rpx;
- }
- .disFlex{
-   display: flex;
- }
-
+.vShow{
+  display: block;
+}
+.vHide{
+  display: none;
+}
+.inlineC{
+  display: inline-block;
+}
+.rotate180{
+  transform: rotate(180deg);
+}
+.rotate90{
+  transform: rotate(90deg);
+}
+.posAbRight10{
+  position: absolute;
+  right: 10rpx;
+}
+.padLeft30{
+  padding-left: 30rpx;
+}
+.padRight30{
+  padding-right: 30rpx;
+}
+.padTop20{
+  padding-top: 20rpx;
+}
+.padTop30{
+  padding-top: 30rpx;
+}
+.padBottom30{
+  padding-bottom: 30rpx;
+}
+.font24{
+  font-size: 24rpx;
+}
+.font28{
+  font-size: 28rpx;
+}
+.font32{
+  font-size: 32rpx;
+}
+.font36{
+  font-size: 36rpx;
+}
+.color08{
+  color: #080808;
+}
+.color99{
+  color: #999;
+}
+.color66{
+  color: #666;
+}
+.color33{
+  color: #333;
+}
+.colorCC{
+  color: #ccc;
+}
+.colorBe{
+  color:#b5b9be;
+}
+.colorBF{
+  color: #bfbfbf;
+}
+.colorFF{
+  color: #fff;
+}
+.coloeRed{
+  color: #f23030;
+}
+.color509{
+  color: #5099ff;
+}
+.textIndent{
+  text-indent: 30rpx;
+}
+.textCenter{
+  text-align: center;
+}
+.disFlex{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+}
+.marginRight60{
+  margin-right: 60rpx;
+}
+.marginRight40{
+  margin-right: 40rpx;
+}
+.marginRight30{
+  margin-right: 30rpx;
+}
+.marginRight20{
+  margin-right: 20rpx;
+}
+.marginRight10{
+  margin-right: 10rpx;
+}
+.marginTop10{
+  margin-top: 10rpx;
+}
+.marginTop20{
+  margin-top: 20rpx;
+}
+.marginBottom20{
+  margin-bottom: 20rpx;
+}
+.marginTop30{
+  margin-top: 30rpx;
+}
+.marginBottom30{
+  margin-bottom: 30rpx;
+}
+.marginTop40{
+  margin-top: 40rpx;
+}
+.marginLeft20{
+  margin-left: 20rpx;
+}
+.marginLeft10{
+  margin-left: 10rpx;
+}
+.widthHalf{
+  width: 50%;
+}
+.widthQtr{
+  width: 25%;
+}
+.widthQtrThree{
+  width: 75%;
+}
+.width40{
+  width: 40%;
+}
+.width60{
+  width: 60%;
+}
+.width15{
+  width: 15%;
+}
+.width85{
+  width: 85%;
+}
+/* 工作台--公共样式 */
+.workbenchHead{
+  background: #5099ff;
+  font-size: 24rpx;
+  color: #fff;
+  text-align: center;
+}
+.navStyle{
+  height: 88rpx;
+  display: inline-block;
+  margin: 0rpx 10rpx;
+  padding: 0rpx;
+  line-height: 88rpx;
+  font-size: 32rpx;
+}
+.navStyle.on{
+  height: 82rpx;
+  border-bottom: 6rpx solid #fff;
+}
+.workbenchContainer{
+  background: #fafafa;
+  width: 750rpx;
+  /* height: 100%; */
+  padding-bottom: 40rpx;
+}
+/* 隐藏底层 */
+.popup{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 999;
+}
+.popup_nonPassDec{
+  width: 560rpx;
+  height: 380rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -280rpx;
+  margin-top: -190rpx;
+}
+.popupBtnGroup{
+  height: 100rpx;
+  border-top: 1rpx solid #eee;
+}
+.cancelBtn,.submitBtn{
+  width: 50%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  position: relative;
+}
+.cancelBtn::after{
+  content: '';
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  width: 0rpx;
+  height: 100rpx;
+  border-right: 1rpx solid #eee;
+  border-left: 0rpx;
+  border-top: 0rpx;
+  border-bottom: 0rpx;
+}
+.submitBtn{
+  color: #5099ff;
+}
+/* 下次跟进时间 弹层 */
+.tipNextFollowTime,.delMemberPop{
+  width: 560rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  margin-left: -280rpx;
+}
+.popBtnBox{
+  width: 560rpx;
+  border-top: 1rpx solid #eee;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.knowBtn{
+  width: 100%;
+  color: #5099ff;
+  text-align: center;
+}

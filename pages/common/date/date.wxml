@@ -1,0 +1,4 @@
+<date bindchooseDataTap='chooseData'></date>
+<view class='footerBtnArea'>
+  <view class='sureBtn' bindtap='submitChangeTime'>确定</view>
+</view>

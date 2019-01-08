@@ -1,0 +1,8 @@
+<!--校区 components/schoolZoneSelector/schoolZoneSelector.wxml-->
+<!-- {{dataStatus == "active" ? "on" : ""}} -->
+<view class='ul'>
+    <view wx:for='{{allSchool}}' class='li {{item.status == 1 ? "on" : ""}}' id='{{index}}' data-sindex='{{item.schoolId}}' data-sname='{{item.schoolName}}'  bindtap='selectSchool'>
+    {{item.schoolName}}
+    <icon class="iconfont icon-dui"></icon>
+    </view>
+</view>

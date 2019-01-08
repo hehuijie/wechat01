@@ -1,0 +1,28 @@
+/* components/schoolZoneSelector/schoolZoneSelector.wxss */
+@import'../../app.wxss';
+page{
+  background: #fff;
+}
+.ul{
+  padding-left: 30rpx;
+}
+.li{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #333;
+  border-bottom: 1rpx solid #eeeeee;
+  position: relative;
+}
+.li .icon-dui{
+  color: #fff;
+  font-size: 30rpx;
+  position: absolute;
+  right: 30rpx;
+}
+.on{
+  color: #5099ff;
+}
+.on .icon-dui{
+  color: #5099ff;
+}

@@ -1,0 +1,46 @@
+<view class='dateArea'>
+  <block wx:if='{{beginVal == false}}'>
+    <view class='dateFontStyle' bindtap='beginTime'>{{dateBegin}}</view>
+  </block>
+  <block wx:if='{{beginVal == true}}'>
+    <view class='dateFontStyle on' bindtap='beginTime'>{{beginTime}}</view>
+  </block>
+  <view class='dateMiddle'>至</view>
+  <block wx:if='{{endVal == false}}'>
+    <view class='dateFontStyle' bindtap='endTime'>{{dateEnd}}</view>
+  </block>
+  <block wx:if='{{endVal == true}}'>
+    <view class='dateFontStyle on' bindtap='endTime'>{{endTime}}</view>
+  </block>
+</view>
+  <block wx:if='{{pickViewBegin == true}}'>
+  <view class='pickerArea'>
+    <picker-view indicator-class="pickerViewColumn" class='pickerViewStyle' value="{{value}}" bindchange="bindChangeDateBegin">
+      <picker-view-column>
+        <view wx:for="{{years}}" class='pickerYear'>{{item}}年</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{months}}" class='pickerMonth'>{{item}}月</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{days}}" class='pickerDay'>{{item}}日</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+  </block>
+  <block wx:elif='{{pickViewEnd == true}}'>
+  <view class='pickerArea'>
+    <picker-view indicator-class="pickerViewColumn" class='pickerViewStyle' value="{{value}}" bindchange="bindChangeDateEnd">
+      <picker-view-column>
+        <view wx:for="{{years}}" style="line-height: 96rpx;">{{item}}年</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{months}}" style="line-height: 96rpx;">{{item}}月</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{days}}" style="line-height: 96rpx;">{{item}}日</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+  </block>
+ 

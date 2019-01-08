@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "schoolList":"../../../components/schoolZoneSelector/schoolZoneSelector"
+  },
+  "navigationBarTitleText":"选择校区"
+}

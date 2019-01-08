@@ -1,0 +1,6 @@
+<scroll-view scroll-y style='height:{{winHeight - 60}}px; width:100%;' bindscrolltoupper='upper' bindscrolltolower='lower' bindscroll='scroll'>
+  <schoolList allSchool='{{allSchool}}' mySchoolArr='{{mySchoolArr}}' bindactiontap='submitActionList'></schoolList>
+</scroll-view>
+<view class='footerBtnArea'>
+<view class='sureBtn' bindtap='submitChangeTime' >确定</view>
+</view>

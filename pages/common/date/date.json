@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "date": "../../../components/dateSelector/dateSelector"
+  },
+  "navigationBarTitleText": "选择时间"
+}
