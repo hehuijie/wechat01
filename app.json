@@ -5,7 +5,11 @@
     "pages/logs/logs",
     "pages/toolbox/toolbox",
     "pages/timeTable/timeTable",
-    "pages/attendanceDetailParB/attendanceDetailParB"
+    "pages/attendanceDetailParB/attendanceDetailParB",
+    "pages/common/date/date",
+    "pages/common/grade/grade",
+    "pages/common/school/school",
+    "pages/common/channel/channel"
   ],
   "window":{
     "backgroundTextStyle":"light",

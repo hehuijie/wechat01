@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "主页",
   "usingComponents": {
-    "my-component-oneTag-name": "../../module/eleOne/eleOne"
+    "school_zoon": "../../components/schoolShow/schoolShow"
   }
 }

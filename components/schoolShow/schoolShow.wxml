@@ -1,17 +1,3 @@
-<!-- <view class='teacherOwnSchool'>
-  <navigator url='../../workbench/message/message?title=选择校区'>
-    <view class='schoolVal'>
-    <block wx:for='{{ownSchoolArr}}'>
-    <block wx:if='{{index == ownSchoolArr.length-1}}'>
-    {{item}}
-    </block>
-    <block wx:else>
-    {{item}}、
-    </block>
-    </block>
-    </view>
-  </navigator>
-</view> -->
 <view class='schoolVal'>
 <block wx:if='{{ownSchoolArr.length <=0}}'>请选择校区</block>
 <block wx:for='{{ownSchoolArr}}'>
