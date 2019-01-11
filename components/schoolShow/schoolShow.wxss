@@ -1,0 +1,23 @@
+.teacherOwnSchool{
+  height: 79rpx;
+  text-align: center;
+  line-height: 65rpx;
+  /* border-bottom: 1rpx solid #eee; */
+}
+.schoolVal{
+  display: inline-block;
+  height: 44rpx;
+  line-height: 44rpx;
+  border-radius: 4rpx;
+  border: 1rpx solid #eee;
+  font-size: 24rpx;
+  color: #333;
+  padding: 0rpx 10rpx;
+  margin: 0rpx auto;
+  width: 380rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
