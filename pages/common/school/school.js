@@ -67,19 +67,16 @@ Page({
         allSchool.schoolName = allsz[key];
         allSchoolArr.push(allSchool);
       };
-      // console.log(that.data.mySchoolArr);
       // 之前选中的校区--高亮显示
-      var schoolArr = [];
       for (var i = 0; i < allSchoolArr.length; i++) {
-        if (allSchoolArr[i].schoolId === that.data.mySchoolArr[i].schoolId) {
-          console.log(allSchoolArr[i].schoolId === that.data.mySchoolArr[i].schoolId);
-          allSchoolArr[i].status = 1;
-          schoolArr.push(allSchoolArr[i]);
+        for (var m = 0; m < that.data.mySchoolArr.length;m++){
+          if (allSchoolArr[i].schoolId === that.data.mySchoolArr[m].schoolId){
+            allSchoolArr[i].status = 1;
+          }
         }
       }
-      console.log(schoolArr);//高亮显示的校区列表
       that.setData({
-        allSchool: schoolArr
+        allSchool: allSchoolArr
       })
 
     }, 'post', { items: 'allsz' });
@@ -123,26 +120,17 @@ Page({
    * 获取组件修改后的数据
    */
   submitActionList: function (e) {
-    // console.log(e);
-    // console.log(e.detail);
     var that = this;
-    that.setData({
-      parameterVal: JSON.stringify(e.detail)
-    })
+    console.log(e.detail);
+    app.globalData.schoolZone=e.detail
   },
   /**
    * 提交数据
    */
   submitChangeTime: function (e) {
     var that = this;
-    app.globalData.schoolZone = JSON.parse(that.data.parameterVal);
-    wx.switchTab({
-      url: '../../workbench/stat/stat',
-      success: function (res) {
-        // console.log(app.globalData.schoolZone);
-      },
-      fail: function (res) { },
-      complete: function (res) { },
+    wx.navigateBack({
+      data:1
     })
   },
   upper: function (e) {

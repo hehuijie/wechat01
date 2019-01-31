@@ -2,6 +2,32 @@
 page{
   background: #fff;
 }
+.memberHeadArea{
+  background: #fff;
+  border-bottom: 1rpx solid #eee;
+}
+.searchMsgArea{
+  width: 690rpx;
+  height: 60rpx;
+  border-radius: 8rpx;
+  background: #f6f7f8;
+  margin-left: 30rpx;
+  margin-bottom: 20rpx;
+}
+.searchMsgArea icon{
+  position: relative;
+  top: 15rpx;
+  margin-left: 15rpx;
+  margin-right: 10rpx;
+}
+.searchMsgArea input{
+  width: 630rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border: none;
+  font-size: 24rpx;
+  color: #333;
+}
 .ul{
   padding-left: 30rpx;
 }
@@ -17,7 +43,7 @@ page{
   color: #fff;
   font-size: 30rpx;
   position: absolute;
-  right: 50rpx;
+  right: 30rpx;
 }
 .on{
   color: #5099ff;

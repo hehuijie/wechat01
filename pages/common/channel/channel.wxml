@@ -1,0 +1,55 @@
+<view class='disFlex channel_tab'>
+  <view data-index='0' class='channel_title {{tit_index == 0 ? "tit_on" : ""}}' bindtap='rest_channel'>一级渠道</view>
+  <view data-index='1' class='channel_title {{tit_index == 1 ? "tit_on" : ""}}' bindtap='rest_channel'>二级渠道</view>
+  <view data-index='2' class='channel_title {{tit_index == 2 ? "tit_on" : ""}}' bindtap='rest_channel'>三级渠道</view>
+</view>
+<swiper current='{{channel_index}}' style='height:{{winHeight - 120}}px'>
+  <swiper-item>
+    <scroll-view scroll-y style='height:{{winHeight - 120}}px'>
+    <view class='channel_box'>
+      <block wx:if='{{channel_1.length <=0}}'>
+        <view class='textCenter marginTop30 marginBottom30 font28 color33'>暂无相关数据</view>
+      </block>
+      <block wx:el>
+        <view wx:for='{{channel_1}}' data-id='{{item.channel_1_id}}' data-name='{{item.channel_1_name}}' data-nextindex='1' class='channel_item {{item_1_index == item.channel_1_id ? "item_on" : ""}} ' bindtap='get_channel_1'>
+        {{item.channel_1_name}}
+        <icon class='iconfont icon-dui'></icon>
+        </view>
+      </block>
+    </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style='height:{{winHeight - 120}}px'>
+      <view class='channel_box'>
+        <block wx:if='{{channel_2.length <=0}}'>
+          <view class='textCenter marginTop30 marginBottom30 font28 color33'>暂无相关数据</view>
+        </block>
+        <block wx:el>
+          <view wx:for='{{channel_2}}' data-id='{{item.channel_2_id}}' data-name='{{item.channel_2_name}}' data-nextindex='2' class='channel_item {{item_2_index == item.channel_2_id ? "item_on" : ""}} ' bindtap='get_channel_2'>
+          {{item.channel_2_name}}
+          <icon class='iconfont icon-dui'></icon>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+    </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style='height:{{winHeight - 120}}px'>
+      <view class='channel_box'>
+        <block wx:if='{{channel_3.length <=0}}'>
+          <view class='textCenter marginTop30 marginBottom30 font28 color33'>暂无相关数据</view>
+        </block>
+        <block wx:el>
+        <view wx:for='{{channel_3}}' data-id='{{item.channel_3_id}}' data-name='{{item.channel_3_name}}' class='channel_item {{item_3_index == item.channel_3_id ? "item_on" : ""}} ' bindtap='get_channel_3'>
+        {{item.channel_3_name}}
+        <icon class='iconfont icon-dui'></icon>
+        </view>
+        </block>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>
+<view class="footerBtn">
+  <view class='submitAction' bindtap='submitAction'>确定</view>
+</view>

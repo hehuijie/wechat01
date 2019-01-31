@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ownSchoolList": "../../../components/schoolShow/schoolShow"
+  },
+  "navigationBarTitleText":"选择老师"
+}

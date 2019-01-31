@@ -1,0 +1,40 @@
+<block wx:if="{{click_type == 1}}">
+  <scroll-view scroll-y style='height:{{winHeight - 60}}px; width:100%;'>
+    <view class='ul'>
+        <view 
+          wx:for='{{allSchool}}' 
+          class='li {{item_index == item.schoolId ? "on" : ""}}' 
+          id='{{index}}' 
+          data-sindex='{{item.schoolId}}' 
+          data-sname='{{item.schoolName}}'
+          bindtap='select_school'>
+          {{item.schoolName}}
+          <icon class="iconfont icon-dui"></icon>
+        </view>
+    </view>
+  </scroll-view>
+</block>
+
+<block wx:else>
+  <scroll-view scroll-y 
+    style='height:{{winHeight - 60}}px; width:100%;' 
+    bindscrolltoupper='upper' 
+    bindscrolltolower='lower' 
+    bindscroll='scroll'>
+    <view class='ul'>
+        <view 
+          wx:for='{{allSchool}}' 
+          class='li {{item.status == 1 ? "on" : ""}}' 
+          id='{{index}}' 
+          data-sindex='{{item.schoolId}}' 
+          data-sname='{{item.schoolName}}' 
+          bindtap='selectSchool'>
+          {{item.schoolName}}
+          <icon class="iconfont icon-dui"></icon>
+        </view>
+    </view>
+  </scroll-view>
+</block>
+<view class='footerBtnArea'>
+  <view class='sureBtn' bindtap='submitChangeTime' >确定</view>
+</view>

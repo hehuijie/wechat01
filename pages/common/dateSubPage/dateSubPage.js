@@ -27,7 +27,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    date_active:1,
+    date_active: 1,
     years: years,
     months: months,
     days: days,
@@ -41,8 +41,8 @@ Page({
     console.log(options);
     var that = this;
     that.setData({
-      start_time:options.start_time,
-      end_time:options.end_time
+      start_time: options.start_time,
+      end_time: options.end_time
     })
   },
 
@@ -50,60 +50,60 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    
+
   },
-  beginTime:function(e){
+  beginTime: function (e) {
     console.log(e);
     var that = this;
     that.setData({
-      date_active:e.target.dataset.index,
-      pickViewBegin:true,
-      pickViewEnd:false
+      date_active: e.target.dataset.index,
+      pickViewBegin: true,
+      pickViewEnd: false
     })
   },
-  endTime:function(e){
+  endTime: function (e) {
     var that = this;
     that.setData({
       date_active: e.target.dataset.index,
@@ -119,7 +119,7 @@ Page({
     var val = e.detail.value;
     var that = this;
     that.setData({
-      start_time: util.formatDate(new Date(that.data.years[val[0]], that.data.months[val[1]]-1, that.data.days[val[2]]))
+      start_time: util.formatDate(new Date(that.data.years[val[0]], that.data.months[val[1]] - 1, that.data.days[val[2]]))
     })
   },
   bindChangeDateEnd: function (e) {
@@ -132,12 +132,20 @@ Page({
   /**
    * 确定
    */
-  submitChangeTime:function(e){
+  submitChangeTime: function (e) {
     var that = this;
-    app.globalData.startTime = that.data.start_time;
-    app.globalData.endTime = that.data.end_time;
+    var date_obj = {};
+
+    date_obj.start_time = that.data.start_time;
+    date_obj.end_time = that.data.end_time;
+    
+    wx.setStorage({
+      key: 'selector_date',
+      data: date_obj,
+    });
+
     wx.navigateBack({
-      data: 1
-    })
+      delta: 1,
+    });
   }
 })

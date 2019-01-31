@@ -1,0 +1,24 @@
+<view class='memberHeadArea'>
+  <view class='textCenter'>
+    <view class='textCenter padTop20 marginBottom20'>
+      <ownSchoolList ownSchoolArr='{{ownSchoolArr}}' bindtap='chooseSchool'></ownSchoolList>
+    </view>
+  </view>
+  <view class='disFlex'>
+    <view class='searchMsgArea disFlex'>
+      <icon type='search' size='18'></icon>
+      <input type='text' confirm-type='search' placeholder='请输入搜索信息'></input>
+    </view>
+  </view>
+</view>
+<scroll-view scroll-y style='height:{{winHeight - 120}}px; width:100%;' bindscrolltoupper='upper' bindscrolltolower='lower' bindscroll='scroll'>
+  <view class='ul'>
+      <view wx:for='{{classroom_list}}' class='li {{status == index ? "on" : ""}}' data-index='{{index}}' data-id='{{item.id}}' data-name='{{item.name}}'  bindtap='selectTeacher'>
+      {{item.name}}
+      <icon class="iconfont icon-dui"></icon>
+      </view>
+  </view>
+</scroll-view>
+<view class='footerBtnArea'>
+  <view class='sureBtn' bindtap='submitTeacher' >确定</view>
+</view>

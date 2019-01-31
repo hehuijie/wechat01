@@ -1,6 +1,4 @@
 {
-  "usingComponents": {
-    "schoolList": "../../../components/schoolZoneSelector/schoolZoneSelector"
-  },
-  "navigationBarTitleText": "选择渠道"
+  "usingComponents": {},
+  "navigationBarTitleText": "运营-建档-来源渠道"
 }

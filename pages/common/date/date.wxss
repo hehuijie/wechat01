@@ -1,4 +1,54 @@
 @import'../../../app.wxss';
+
+.dateArea{
+  width: 690rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row column;
+}
+.dateFontStyle{
+  width: 290rpx;
+  height: 120rpx;
+  border-bottom: 2rpx solid #eee;
+  text-align: center;
+  line-height: 120rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.dateFontStyle.on{
+  color: #5097ff;
+  border-bottom-color: #5097ff;
+}
+.dateMiddle{
+  width: 110rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #999;
+}
+.pickerArea{
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eeeeee;
+  margin-top: 140rpx;
+}
+.pickerViewStyle{
+  width: 480rpx; 
+  height: 370rpx; 
+  margin-left:140rpx;
+}
+.pickerViewColumn{
+  width: 140rpx;
+  height: 96rpx;
+  text-align: center;
+  border-bottom: 4rpx solid #eeeeee;
+}
+.pickerYear,.pickerMonth,.pickerDay{
+  line-height: 96rpx;
+}
+
 .footerBtnArea{
   background: #fff;
   position: absolute;

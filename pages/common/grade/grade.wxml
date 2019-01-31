@@ -1,0 +1,11 @@
+<scroll-view scroll-y style='height:{{winHeight - 70}}px'>
+  <view class='ul'>
+      <view wx:for='{{gradeArr}}' data-index='{{index}}' data-name='{{item.grade_name}}' class='li {{item_index == index ? "on" : ""}}' id='{{item.grade_id}}'  bindtap='get_grade_tap'>
+      {{item.grade_name}}
+      <icon class="iconfont icon-dui"></icon>
+      </view>
+  </view>
+</scroll-view>
+<view class='footerBtnArea'>
+<view class='sureBtn' bindtap='submitChangeTime' >确定</view>
+</view>
